@@ -10,7 +10,7 @@ def criar_conta (nome, senha, email):
     emails.append(email)
 
 def entrar_na_conta(email):
-    if email in email:
+    if email in emails:
         print("conta existente !")
     else:
         print("está conta não existe")
