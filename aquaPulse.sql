@@ -17,6 +17,8 @@ CREATE TABLE tbUsuarios (
   estado_usuario VARCHAR(255)
 );
 
+-- Não mexer daqui pra cima
+
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar@gmail.com', 'chefe'),
          ('Iago', 'Bortoluzzi', 'iago1@gmail.com', 'chefe'),
