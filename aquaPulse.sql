@@ -17,8 +17,6 @@ CREATE TABLE tbUsuarios (
   estado_usuario VARCHAR(255)
 );
 
--- Não mexer daqui pra cima
-
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar@gmail.com', 'chefe'),
          ('Iago', 'Bortoluzzi', 'iago1@gmail.com', 'chefe'),
@@ -28,3 +26,18 @@ INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
 INSERT INTO tbUsuarios (nome_usuario, sobrenome_usuario, email_usuario, cidade_usuario, estado_usuario)
   VALUES ('Ana', 'Lima', 'ana.lima@email.com', 'Aracaju', 'Sergipe'),
          ('André', 'Silva', 'andre.silva@email.com', 'Aparecida de Goiânia', 'Goiás');
+
+UPDATE tbAdministradores
+SET email_adm = 'osmar.s@estudante.ifmt.edu.br'
+WHERE nome_adm = 'Osmar' AND sobrenome_adm = 'Araujo';
+
+UPDATE tbAdministradores
+SET cargo_adm = 'Tech Lead'
+WHERE nome_adm = 'Osmar' AND sobrenome_adm = 'Araujo';
+
+UPDATE tbAdministradores
+SET email_adm = 'iagogabriel9710@gmail.com'
+WHERE nome_adm = 'Iago' AND sobrenome_adm = 'Bortoluzzi';
+
+SELECT *
+FROM tbAdministradores
