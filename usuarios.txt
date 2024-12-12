@@ -1,0 +1,235 @@
+---
+
+### A
+1. (Ana, Lima, ana.lima@email.com, Aracaju, Sergipe)
+2. (André, Silva, andre.silva@email.com, Aparecida de Goiânia, Goiás)
+3. (Amanda, Oliveira, amanda.oliveira@email.com, Anápolis, Goiás)
+4. (Alex, Souza, alex.souza@email.com, Alagoinhas, Bahia)
+5. (Arthur, Costa, arthur.costa@email.com, Amparo, São Paulo)
+
+---
+
+### B
+1. (Bruna, Martins, bruna.martins@email.com, Belo Horizonte, Minas Gerais)
+2. (Bruno, Pereira, bruno.pereira@email.com, Barbacena, Minas Gerais)
+3. (Bianca, Rocha, bianca.rocha@email.com, Brasília, Distrito Federal)
+4. (Bárbara, Ferreira, barbara.ferreira@email.com, Bauru, São Paulo)
+5. (Benjamin, Santos, benjamin.santos@email.com, Belém, Pará)
+
+---
+
+### C
+1. (Carlos, Mendes, carlos.mendes@email.com, Campinas, São Paulo)
+2. (Camila, Souza, camila.souza@email.com, Curitiba, Paraná)
+3. (Cecília, Lima, cecilia.lima@email.com, Caxias do Sul, Rio Grande do Sul)
+4. (Caio, Alves, caio.alves@email.com, Cuiabá, Mato Grosso)
+5. (Cristina, Costa, cristina.costa@email.com, Campos dos Goytacazes, Rio de Janeiro)
+
+---
+
+### D
+1. (Daniel, Silva, daniel.silva@email.com, Duque de Caxias, Rio de Janeiro)
+2. (Débora, Oliveira, debora.oliveira@email.com, Delmiro Gouveia, Alagoas)
+3. (David, Rodrigues, david.rodrigues@email.com, Dourados, Mato Grosso do Sul)
+4. (Daniele, Pereira, daniele.pereira@email.com, Divinópolis, Minas Gerais)
+5. (Douglas, Santos, douglas.santos@email.com, Diadema, São Paulo)
+
+---
+
+### E
+1. (Eduardo, Costa, eduardo.costa@email.com, Espírito Santo do Pinhal, São Paulo)
+2. (Eliane, Martins, eliane.martins@email.com, Estância, Sergipe)
+3. (Emília, Gomes, emilia.gomes@email.com, Embu das Artes, São Paulo)
+4. (Enzo, Silva, enzo.silva@email.com, Eusébio, Ceará)
+5. (Evelyn, Souza, evelyn.souza@email.com, Embu-Guaçu, São Paulo)
+
+---
+
+### F
+1. (Fabiana, Rocha, fabiana.rocha@email.com, Fortaleza, Ceará)
+2. (Felipe, Pereira, felipe.pereira@email.com, Florianópolis, Santa Catarina)
+3. (Fábio, Alves, fabio.alves@email.com, Foz do Iguaçu, Paraná)
+4. (Fernanda, Souza, fernanda.souza@email.com, Franca, São Paulo)
+5. (Francisco, Santos, francisco.santos@email.com, Feira de Santana, Bahia)
+
+---
+
+### G
+1. (Gabriel, Lima, gabriel.lima@email.com, Goiânia, Goiás)
+2. (Giovana, Costa, giovana.costa@email.com, Guarujá, São Paulo)
+3. (Gustavo, Oliveira, gustavo.oliveira@email.com, Gravataí, Rio Grande do Sul)
+4. (Glória, Alves, gloria.alves@email.com, Guarulhos, São Paulo)
+5. (Gisele, Pereira, gisele.pereira@email.com, Goiânia, Goiás)
+
+---
+
+### H
+1. (Henrique, Santos, henrique.santos@email.com, Hortolândia, São Paulo)
+2. (Heloísa, Lima, heloisa.lima@email.com, Hidrolândia, Goiás)
+3. (Hugo, Oliveira, hugo.oliveira@email.com, Humaitá, Amazonas)
+4. (Helen, Costa, helen.costa@email.com, Holambra, São Paulo)
+5. (Heitor, Pereira, heitor.pereira@email.com, Hermenópolis, Minas Gerais)
+
+---
+
+### I
+1. (Isabela, Silva, isabela.silva@email.com, Ipatinga, Minas Gerais)
+2. (Igor, Rocha, igor.rocha@email.com, Ipojuca, Pernambuco)
+3. (Ícaro, Costa, icaro.costa@email.com, Ilhéus, Bahia)
+4. (Isadora, Pereira, isadora.pereira@email.com, Indaiatuba, São Paulo)
+5. (Irene, Santos, irene.santos@email.com, Itaperuna, Rio de Janeiro)
+
+---
+
+### J
+1. (João, Oliveira, joao.oliveira@email.com, João Pessoa, Paraíba)
+2. (Juliana, Costa, juliana.costa@email.com, Juiz de Fora, Minas Gerais)
+3. (José, Silva, jose.silva@email.com, Joinville, Santa Catarina)
+4. (Júlia, Souza, julia.souza@email.com, Jundiaí, São Paulo)
+5. (Jéssica, Pereira, jessica.pereira@email.com, Juazeiro, Bahia)
+
+---
+
+### K
+1. (Karla, Lima, karla.lima@email.com, Kirituba, Rio Grande do Sul)
+2. (Kleber, Oliveira, kleber.oliveira@email.com, Kémen, Espírito Santo)
+3. (Kevin, Santos, kevin.santos@email.com, Katendê, Minas Gerais)
+4. (Kátia, Costa, katia.costa@email.com, Karatu, Sergipe)
+5. (Karla, Souza, karla.souza@email.com, Kanab, Goiás)
+
+---
+
+### L
+1. (Lucas, Silva, lucas.silva@email.com, Londrina, Paraná)
+2. (Lívia, Costa, livia.costa@email.com, Luziânia, Goiás)
+3. (Laura, Pereira, laura.pereira@email.com, Lages, Santa Catarina)
+4. (Luan, Rocha, luan.rocha@email.com, Limeira, São Paulo)
+5. (Leandro, Souza, leandro.souza@email.com, Leme, São Paulo)
+
+Claro, aqui está o restante da lista completa:
+
+---
+
+### M
+1. (Maria, Silva, maria.silva@email.com, Manaus, Amazonas)  
+2. (Mateus, Costa, mateus.costa@email.com, Maceió, Alagoas)  
+3. (Marcela, Pereira, marcela.pereira@email.com, Maringá, Paraná)  
+4. (Michel, Rocha, michel.rocha@email.com, Montes Claros, Minas Gerais)  
+5. (Mário, Oliveira, mario.oliveira@email.com, Marília, São Paulo)  
+
+---
+
+### N
+1. (Nathalia, Souza, nathalia.souza@email.com, Niterói, Rio de Janeiro)  
+2. (Nelson, Silva, nelson.silva@email.com, Natal, Rio Grande do Norte)  
+3. (Natália, Lima, natalia.lima@email.com, Nova Iguaçu, Rio de Janeiro)  
+4. (Nicolas, Santos, nicolas.santos@email.com, Nanuque, Minas Gerais)  
+5. (Noemi, Rocha, noemi.rocha@email.com, Nova Friburgo, Rio de Janeiro)  
+
+---
+
+### O
+1. (Olga, Costa, olga.costa@email.com, Osasco, São Paulo)  
+2. (Otávio, Oliveira, otavio.oliveira@email.com, Olinda, Pernambuco)  
+3. (Olívio, Silva, olivio.silva@email.com, Ourinhos, São Paulo)  
+4. (Orlando, Pereira, orlando.pereira@email.com, Oriximiná, Pará)  
+5. (Omar, Santos, omar.santos@email.com, Osvaldo Cruz, São Paulo)  
+
+---
+
+### P
+1. (Paula, Souza, paula.souza@email.com, Porto Alegre, Rio Grande do Sul)  
+2. (Pedro, Lima, pedro.lima@email.com, Paulista, Pernambuco)  
+3. (Priscila, Costa, priscila.costa@email.com, Poços de Caldas, Minas Gerais)  
+4. (Paulo, Silva, paulo.silva@email.com, Ponta Grossa, Paraná)  
+5. (Patrícia, Rocha, patricia.rocha@email.com, Piracicaba, São Paulo)  
+
+---
+
+### Q
+1. (Quésia, Almeida, quesia.almeida@email.com, Quixeramobim, Ceará)  
+2. (Quirino, Costa, quirino.costa@email.com, Quixadá, Ceará)  
+3. (Quezia, Pereira, quezia.pereira@email.com, Quilombo, Santa Catarina)  
+4. (Quintino, Souza, quintino.souza@email.com, Quaraí, Rio Grande do Sul)  
+5. (Quirina, Lima, quirina.lima@email.com, Querência, Mato Grosso)  
+
+---
+
+### R
+1. (Rafael, Rocha, rafael.rocha@email.com, Rio de Janeiro, Rio de Janeiro)  
+2. (Rita, Santos, rita.santos@email.com, Recife, Pernambuco)  
+3. (Ricardo, Costa, ricardo.costa@email.com, Ribeirão Preto, São Paulo)  
+4. (Rogério, Lima, rogerio.lima@email.com, Rio Claro, São Paulo)  
+5. (Renata, Pereira, renata.pereira@email.com, Rondonópolis, Mato Grosso)  
+
+---
+
+### S
+1. (Samuel, Silva, samuel.silva@email.com, São Bernardo do Campo, São Paulo)  
+2. (Sofia, Lima, sofia.lima@email.com, Salvador, Bahia)  
+3. (Sérgio, Costa, sergio.costa@email.com, Sorocaba, São Paulo)  
+4. (Suzana, Pereira, suzana.pereira@email.com, São Paulo, São Paulo)  
+5. (Silvana, Rocha, silvana.rocha@email.com, São José, Santa Catarina)  
+
+---
+
+### T
+1. (Tatiane, Santos, tatiane.santos@email.com, Teresina, Piauí)  
+2. (Tiago, Pereira, tiago.pereira@email.com, Taubaté, São Paulo)  
+3. (Tânia, Lima, tania.lima@email.com, Tocantinópolis, Tocantins)  
+4. (Thales, Rocha, thales.rocha@email.com, Três Corações, Minas Gerais)  
+5. (Tadeu, Souza, tadeu.souza@email.com, Taguatinga, Distrito Federal)  
+
+---
+
+### U
+1. (Ubirajara, Silva, ubirajara.silva@email.com, Ubatuba, São Paulo)  
+2. (Uliana, Costa, uliana.costa@email.com, União da Vitória, Paraná)  
+3. (Ugo, Lima, ugo.lima@email.com, Uberlândia, Minas Gerais)  
+4. (Uriel, Rocha, uriel.rocha@email.com, Uruçuí, Piauí)  
+5. (Uélio, Pereira, uelio.pereira@email.com, Umuarama, Paraná)  
+
+---
+
+### V
+1. (Vinícius, Souza, vinicius.souza@email.com, Vitória, Espírito Santo)  
+2. (Verônica, Lima, veronica.lima@email.com, Várzea Grande, Mato Grosso)  
+3. (Vanderlei, Rocha, vanderlei.rocha@email.com, Volta Redonda, Rio de Janeiro)  
+4. (Valéria, Silva, valeria.silva@email.com, Vila Velha, Espírito Santo)  
+5. (Vitor, Pereira, vitor.pereira@email.com, Valinhos, São Paulo)  
+
+---
+
+### W
+1. (Wilson, Costa, wilson.costa@email.com, Wenceslau Braz, São Paulo)  
+2. (Wagner, Pereira, wagner.pereira@email.com, Washington Luís, São Paulo)  
+3. (Wanessa, Lima, wanessa.lima@email.com, Waldir Pires, Bahia)  
+4. (William, Souza, william.souza@email.com, Windsor, Rio de Janeiro)  
+5. (Walter, Rocha, walter.rocha@email.com, Xinguara, Pará)  
+
+---
+
+### X
+1. (Xuxa, Costa, xuxa.costa@email.com, Xanxerê, Santa Catarina)  
+2. (Xavier, Lima, xavier.lima@email.com, Xinguara, Pará)  
+3. (Xenon, Pereira, xenon.pereira@email.com, Xapuri, Acre)  
+4. (Xênia, Rocha, xenia.rocha@email.com, Xingu, Mato Grosso)  
+5. (Xander, Souza, xander.souza@email.com, Xerém, Rio de Janeiro)  
+
+---
+
+### Y
+1. (Yasmin, Pereira, yasmin.pereira@email.com, Ypiranga, Rio Grande do Sul)  
+2. (Yago, Costa, yago.costa@email.com, Yaguara, Minas Gerais)  
+3. (Yuri, Silva, yuri.silva@email.com, Ytacaranha, Bahia)  
+4. (Yara, Lima, yara.lima@email.com, Yakutinga, São Paulo)  
+5. (Yvone, Souza, yvone.souza@email.com, Ypiranga do Sul, Rio Grande do Sul)  
+
+---
+
+### Z
+1. (Zeca, Costa, zeca.costa@email.com, Zé Doca, Maranhão)  
+2. (Zilda, Silva, zilda.silva@email.com, Zona Sul, Rio de Janeiro)  
+3. (Zé, Pereira, ze.pereira@email.com, Zé Pimenta, Bahia)  
+4. (Zoe, Rocha, zoe.rocha@email.com, Zé de Sá, Maranhão)  
+5. (Zuleide, Souza, zuleide.souza@email.com, Zero, São Paulo)  
