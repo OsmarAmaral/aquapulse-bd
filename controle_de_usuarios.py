@@ -20,7 +20,7 @@ def entrar_na_conta(email):
 # não mexer
 
 slc = 0
-while slc != 9:
+while slc != 3:
     print("-----Menu-----")
     print("1. sing in")
     print("2. sing up")
