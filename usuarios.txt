@@ -1,6 +1,3 @@
-Claro! Aqui está a lista completa com os nomes, sobrenomes, cidades e estados entre aspas simples, conforme solicitado:
-
----
 
 ### A
 1. ('Ana', 'Lima', 'ana.lima@email.com', 'Aracaju', 'Sergipe')
