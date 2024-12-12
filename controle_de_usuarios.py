@@ -14,10 +14,6 @@ def entrar_na_conta(email):
         print("conta existente !")
     else:
         print("está conta não existe")
-    
-    
-# desenvolvimento
-# não mexer
 
 slc = 0
 while slc != 3:
