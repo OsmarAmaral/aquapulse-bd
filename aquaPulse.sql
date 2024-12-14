@@ -18,16 +18,6 @@ CREATE TABLE tbUsuarios (
   estado_usuario VARCHAR(255)
 );
 
-CREATE TABLE tbProdutos (
-  id_produto SERIAL PRIMARY KEY,
-  nome_produto VARCHAR(255),
-  descricao_produto TEXT,
-  preco_produto DECIMAL,
-  estoque_produto INT,
-  data_entrada_produto DATE,
-  data_saida_produto DATE
-);
-
 CREATE TABLE tbPedidos (
   id_pedido SERIAL PRIMARY KEY,
   data_pedido DATE,
