@@ -1,5 +1,14 @@
 -- AquaPulse - Sistema de irrigação automática
 
+-- AVISO !!! todos os usuarios são ficticios !!!
+
+-- Banco de dados do SITE !!! 
+
+-- Vendemos um unico tipo de produto 
+
+-- postgreSQL 
+
+
 CREATE TABLE tbAdministradores (
   id_adm SERIAL PRIMARY KEY,
   nome_adm VARCHAR(100),
@@ -26,6 +35,23 @@ CREATE TABLE tbPedidos (
   total_pedido DECIMAL,
   FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
 );
+
+CREATE TABLE tbComentarios (
+  id_comentario SERIAL PRIMARY KEY,
+  id_usuario INT,
+  data_comentario DATE,
+  conteudo_comentario VARCHAR(500),
+  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
+);
+
+CREATE TABLE tbMensagensSuporte (
+  id_mensagem SERIAL PRIMARY KEY,
+  id_usuario INT,
+  data_mensagem DATE,
+  conteudo_mensagem TEXT,
+  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
+);
+
 
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar@gmail.com', 'chefe'),
