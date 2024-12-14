@@ -20,9 +20,11 @@ CREATE TABLE tbUsuarios (
 
 CREATE TABLE tbPedidos (
   id_pedido SERIAL PRIMARY KEY,
+  id_usuario INT,
   data_pedido DATE,
   status_pedido VARCHAR(50),
-  total_pedido DECIMAL
+  total_pedido DECIMAL,
+  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
 );
 
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
