@@ -13,8 +13,26 @@ CREATE TABLE tbUsuarios (
   nome_usuario VARCHAR(100),
   sobrenome_usuario VARCHAR(100),
   email_usuario VARCHAR(255) UNIQUE,
+  senha_usuario VARCHAR(255),
   cidade_usuario VARCHAR(255),
   estado_usuario VARCHAR(255)
+);
+
+CREATE TABLE tbProdutos (
+  id_produto SERIAL PRIMARY KEY,
+  nome_produto VARCHAR(255),
+  descricao_produto TEXT,
+  preco_produto DECIMAL,
+  estoque_produto INT,
+  data_entrada_produto DATE,
+  data_saida_produto DATE
+);
+
+CREATE TABLE tbPedidos (
+  id_pedido SERIAL PRIMARY KEY,
+  data_pedido DATE,
+  status_pedido VARCHAR(50),
+  total_pedido DECIMAL
 );
 
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
@@ -156,11 +174,7 @@ INSERT INTO tbUsuarios (nome_usuario, sobrenome_usuario, email_usuario, cidade_u
         ('Zuleide', 'Souza', 'zuleide.souza@email.com', 'Zero', 'São Paulo');  
 
 UPDATE tbAdministradores
-SET email_adm = 'osmar.s@estudante.ifmt.edu.br'
-WHERE nome_adm = 'Osmar' AND sobrenome_adm = 'Araujo';
-
-UPDATE tbAdministradores
-SET cargo_adm = 'Tech Lead'
+SET email_adm = 'osmar.s@estudante.ifmt.edu.br', cargo_adm = 'Tech Lead'
 WHERE nome_adm = 'Osmar' AND sobrenome_adm = 'Araujo';
 
 UPDATE tbAdministradores
