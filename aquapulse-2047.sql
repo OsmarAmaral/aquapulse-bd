@@ -8,6 +8,10 @@
 
 -- postgreSQL 
 
+-- adic valores tbComentarios,
+-- adic valores tbMensagensSuporte,
+-- adic valores tbPagamentos,
+-- adic valores tbEnderecos,
 
 CREATE TABLE tbAdministradores (
   id_adm SERIAL PRIMARY KEY,
@@ -104,7 +108,9 @@ INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar.s@estudante.ifmt.edu.br', 'Tech Lead'),
          ('Iago', 'Bortoluzzi', 'iagogabriel9710@gmail.com', 'chefe'),
          ('Pedro', 'Alves', 'pedro@gmail.com', 'estagiario'),
-         ('Iago', 'Paiva', 'iago2@gmail.com', 'estagiario');
+         ('Iago', 'Paiva', 'iago2@gmail.com', 'estagiario'),
+         ('Amir', 'Tamlieh', 'amir.t@estudante.ifmt.edu.br', 'freelancer'),
+         ('Leonardo', 'Leite', 'leornardo@email.com', 'freelancer');
 
 INSERT INTO tbUsuarios (nome_usuario, sobrenome_usuario, email_usuario, cidade_usuario, estado_usuario)
   VALUES ('Ana', 'Lima', 'ana.lima@email.com', 'Aracaju', 'Sergipe'),
