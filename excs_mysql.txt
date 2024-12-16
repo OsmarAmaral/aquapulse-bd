@@ -1,0 +1,57 @@
+Claro! Aqui estão 10 exercícios de consulta SQL com um nível de dificuldade um pouco mais alto. Eles cobrem conceitos como junções mais complexas, subconsultas, agregações e manipulação de dados.
+
+---
+
+### 1. **Encontrar o cliente com o maior número de pedidos**
+- **Exercício**: Encontre o `nome` do cliente que fez o maior número de pedidos na tabela `clientes` e `pedidos`. Exiba também o número de pedidos feitos por esse cliente.
+
+---
+
+### 2. **Exibir os produtos mais vendidos**
+- **Exercício**: Selecione o `nome` dos produtos e a quantidade total vendida (considerando a soma de `quantidade` na tabela `itens_pedido`) para os 5 produtos mais vendidos. Ordene pelo total de unidades vendidas.
+
+---
+
+### 3. **Encontrar os clientes sem pedidos**
+- **Exercício**: Selecione os `clientes` que ainda não realizaram nenhum pedido. Utilize as tabelas `clientes` e `pedidos`.
+
+---
+
+### 4. **Calculando a média de compra por cliente**
+- **Exercício**: Selecione o `nome` do cliente e a média do `valor_total` dos pedidos realizados por ele. Mostre apenas os clientes que têm uma média de compras superior a 500.
+
+---
+
+### 5. **Listar clientes e seus pedidos, incluindo o status do pedido**
+- **Exercício**: Selecione o `nome` do cliente, `numero_pedido` e `status_pedido`, mostrando os clientes e seus respectivos pedidos, mesmo que não tenham feito nenhum pedido. Considere as tabelas `clientes` e `pedidos`.
+
+---
+
+### 6. **Subconsulta para encontrar pedidos acima da média**
+- **Exercício**: Selecione todos os `numero_pedido` e `valor_total` dos pedidos que têm um `valor_total` superior à média dos pedidos. Utilize a tabela `pedidos`.
+
+---
+
+### 7. **Encontrar o produto mais caro de cada categoria**
+- **Exercício**: Encontre o produto mais caro de cada categoria na tabela `produtos`. Exiba o nome do produto, o preço e a categoria.
+
+---
+
+### 8. **Encontrar o total de vendas por mês**
+- **Exercício**: Selecione o total de vendas (`valor_total`) por mês, utilizando a tabela `pedidos`. Mostre o total de vendas de cada mês e ordene de forma decrescente pelos meses com maior total de vendas.
+
+---
+
+### 9. **Identificar clientes com compras duplicadas**
+- **Exercício**: Selecione os `clientes` que compraram o mesmo produto mais de uma vez. Exiba o nome do cliente e o nome do produto.
+
+---
+
+### 10. **Relatório de clientes com pedidos cancelados**
+- **Exercício**: Selecione todos os `clientes` que fizeram pedidos com o `status` igual a "cancelado" e mostre o nome do cliente, número do pedido e a data do pedido. Exclua os clientes que nunca cancelaram um pedido.
+
+---
+
+Esses exercícios exigem maior compreensão de subconsultas, junções complexas e funções agregadas. Eles são ideais para quem já possui algum conhecimento de SQL e deseja se aprofundar em consultas mais desafiadoras.
+
+Se precisar de ajuda com a solução ou explicação de qualquer um desses exercícios, estou à disposição!
