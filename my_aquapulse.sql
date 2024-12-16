@@ -401,6 +401,27 @@ INSERT INTO tbPagamentos (id_pedido, data_pagamento, valor_pagamento, metodo_pag
 VALUES  (1, '2023-10-01', 139.80, 'Cartão de Crédito', 'Aprovado'),
         (2, '2023-10-02', 199.90, 'Boleto', 'Aprovado'),
         (3, '2023-10-03', 49.90, 'Cartão de Débito', 'Cancelado');
-        
-SELECT nome_usuario
+
+SELECT nome_adm, sobrenome_adm, cargo_adm 
+FROM tbAdministradores;
+
+SELECT nome_usuario AS "Clientes de São Paulo"
 FROM tbUsuarios
+WHERE estado_usuario = 'São Paulo';
+
+SELECT * 
+FROM tbPedidos, tbUsuarios
+WHERE email_usuario = 'andre.silva@email.com' AND
+tbUsuarios.id_usuario = tbPedidos.id_usuario;
+
+SELECT id_pedido, nome_usuario, total_pedido
+FROM tbPedidos, tbUsuarios
+WHERE status_pedido = 'Pendente' AND 
+tbUsuarios.id_usuario = tbPedidos.id_usuario;
+
+SELECT u.nome_usuario, COUNT(p.id_pedido) AS total_pedidos, SUM(p.total_pedido) AS total_gasto
+FROM tbUsuarios u
+LEFT JOIN tbPedidos p ON u.id_usuario = p.id_usuario
+GROUP BY u.id_usuario;
+
+
