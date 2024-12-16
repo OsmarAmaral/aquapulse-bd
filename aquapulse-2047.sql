@@ -288,7 +288,59 @@ VALUES  (1, '2024-01-10', 'Concluído', 599.99),
         (47, '2025-06-01', 'Cancelado', 599.99),  
         (48, '2025-06-10', 'Concluído', 799.99),  
         (49, '2025-06-20', 'Pendente', 499.99),  
-        (50, '2025-07-01', 'Concluído', 749.99);
+        (50, '2025-07-01', 'Concluído', 749.99),
+        (51, '2024-12-01', 'Em andamento', 120.50),
+        (52, '2024-12-02', 'Concluído', 200.75),
+        (53, '2024-12-03', 'Em andamento', 95.00),
+        (54, '2024-12-04', 'Cancelado', 50.30),
+        (55, '2024-12-05', 'Em andamento', 185.90),
+        (56, '2024-12-06', 'Concluído', 215.40),
+        (57, '2024-12-07', 'Em andamento', 320.20),
+        (58, '2024-12-08', 'Cancelado', 130.80),
+        (59, '2024-12-09', 'Em andamento', 99.99),
+        (60, '2024-12-10', 'Concluído', 180.00),
+        (61, '2024-12-11', 'Em andamento', 250.00),
+        (62, '2024-12-12', 'Concluído', 300.75),
+        (63, '2024-12-13', 'Cancelado', 110.60),
+        (64, '2024-12-14', 'Em andamento', 420.00),
+        (65, '2024-12-15', 'Concluído', 150.30),
+        (66, '2024-12-16', 'Em andamento', 175.25),
+        (67, '2024-12-17', 'Cancelado', 85.50),
+        (68, '2024-12-18', 'Concluído', 275.90),
+        (69, '2024-12-19', 'Em andamento', 225.10),
+        (70, '2024-12-20', 'Concluído', 320.00),
+        (71, '2024-12-21', 'Em andamento', 210.50),
+        (72, '2024-12-22', 'Cancelado', 99.00),
+        (73, '2024-12-23', 'Concluído', 160.75),
+        (74, '2024-12-24', 'Em andamento', 245.60),
+        (75, '2024-12-25', 'Cancelado', 120.00),
+        (76, '2024-12-26', 'Em andamento', 195.20),
+        (77, '2024-12-27', 'Concluído', 320.50),
+        (78, '2024-12-28', 'Em andamento', 180.40),
+        (79, '2024-12-29', 'Cancelado', 140.10),
+        (80, '2024-12-30', 'Concluído', 210.20),
+        (81, '2024-12-31', 'Em andamento', 170.00),
+        (82, '2024-11-01', 'Concluído', 300.00),
+        (83, '2024-11-02', 'Cancelado', 125.75),
+        (84, '2024-11-03', 'Em andamento', 190.00),
+        (85, '2024-11-04', 'Concluído', 250.25),
+        (86, '2024-11-05', 'Cancelado', 99.50),
+        (87, '2024-11-06', 'Em andamento', 215.90),
+        (88, '2024-11-07', 'Concluído', 340.60),
+        (89, '2024-11-08', 'Em andamento', 260.00),
+        (90, '2024-11-09', 'Cancelado', 75.80),
+        (91, '2024-11-10', 'Concluído', 195.10),
+        (92, '2024-11-11', 'Em andamento', 230.30),
+        (93, '2024-11-12', 'Cancelado', 115.40),
+        (94, '2024-11-13', 'Em andamento', 265.75),
+        (95, '2024-11-14', 'Concluído', 300.90),
+        (96, '2024-11-15', 'Cancelado', 140.60),
+        (97, '2024-11-16', 'Em andamento', 190.75),
+        (98, '2024-11-17', 'Concluído', 225.20),
+        (99, '2024-11-18', 'Em andamento', 310.50),
+        (100, '2024-11-19', 'Cancelado', 155.30);
+
+        
 
 INSERT INTO tbComentarios (id_usuario, data_comentario, conteudo_comentario)
 VALUES (1, '2024-12-10', 'Produto excelente, ajudou muito na irrigação automática.'),
@@ -303,3 +355,26 @@ VALUES (1, '2024-12-01', 'Como configurar o sistema para irrigar em horários di
        (3, '2024-12-03', 'Posso usar o sistema em uma plantação maior que 2 hectares?'),
        (4, '2024-12-05', 'Quais são as condições para a garantia do produto?'),
        (5, '2024-12-07', 'O suporte técnico pode ajudar na instalação inicial?');
+       
+INSERT INTO tbProdutos (nome_produto, descricao_produto, preco_produto, estoque_produto) 
+VALUES ('Sensor de Umidade', 'Sensor para medir a umidade do solo, ideal para irrigação automática.', 49.90, 200),
+       ('Válvula Solenoide', 'Válvula para controle do fluxo de água em sistemas de irrigação.', 89.90, 150),
+       ('Controlador Arduino', 'Placa Arduino para automação de sistemas de irrigação.', 199.90, 100);
+       
+INSERT INTO tbCategorias (nome_categoria, descricao_categoria) 
+VALUES ('Sensores', 'Dispositivos para monitoramento de condições do solo.'),
+       ('Válvulas', 'Equipamentos para controle do fluxo de água.'),
+       ('Controladores', 'Placas e dispositivos para automação.');
+       
+INSERT INTO tbEnderecos (id_usuario, endereco, cidade, estado, cep) 
+VALUES (1, 'Rua A, 123', 'São Paulo', 'SP', '01000-000'),
+       (2, 'Avenida B, 456', 'Rio de Janeiro', 'RJ', '20000-000'),
+       (3, 'Praça C, 789', 'Belo Horizonte', 'MG', '30000-000');
+
+INSERT INTO tbPagamentos (id_pedido, data_pagamento, valor_pagamento, metodo_pagamento, status_pagamento) 
+VALUES (1, '2023-10-01', 139.80, 'Cartão de Crédito', 'Aprovado'),
+       (2, '2023-10-02', 199.90, 'Boleto', 'Aprovado'),
+       (3, '2023-10-03', 49.90, 'Cartão de Débito', 'Cancelado');
+
+
+
