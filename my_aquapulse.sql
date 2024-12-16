@@ -424,4 +424,18 @@ FROM tbUsuarios u
 LEFT JOIN tbPedidos p ON u.id_usuario = p.id_usuario
 GROUP BY u.id_usuario;
 
+SELECT nome_usuario, COUNT(id_pedido) AS Total_Pedidos
+FROM tbUsuarios u
+INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
+GROUP BY u.id_usuario
+ORDER BY Total_Pedidos
+LIMIT 1;
 
+SELECT nome_usuario, p.id_pedido, p.data_pedido
+FROM tbUsuarios u
+INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
+WHERE p.status_pedido = 'cancelado';
+
+SELECT nome_usuario, p.id_pedido, p.status_pedido
+FROM tbUsuarios u
+LEFT JOIN tbPedidos p ON u.id_usuario = p.id_usuario;
