@@ -52,6 +52,53 @@ CREATE TABLE tbMensagensSuporte (
   FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
 );
 
+-- REVISAR
+
+CREATE TABLE tbProdutos (
+  id_produto SERIAL PRIMARY KEY,
+  nome_produto VARCHAR(100),
+  descricao_produto TEXT,
+  preco_produto DECIMAL,
+  estoque_produto INT
+);
+
+CREATE TABLE tbEnderecos (
+  id_endereco SERIAL PRIMARY KEY,
+  id_usuario INT,
+  endereco VARCHAR(255),
+  cidade VARCHAR(100),
+  estado VARCHAR(100),
+  cep VARCHAR(10),
+  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
+);
+
+CREATE TABLE tbPagamentos (
+  id_pagamento SERIAL PRIMARY KEY,
+  id_pedido INT,
+  data_pagamento DATE,
+  valor_pagamento DECIMAL,
+  metodo_pagamento VARCHAR(50),
+  status_pagamento VARCHAR(50),
+  FOREIGN KEY (id_pedido) REFERENCES tbPedidos(id_pedido)
+);
+
+CREATE TABLE tbCategorias (
+  id_categoria SERIAL PRIMARY KEY,
+  nome_categoria VARCHAR(100),
+  descricao_categoria TEXT
+);
+
+CREATE TABLE tbAvaliacoes (
+  id_avaliacao SERIAL PRIMARY KEY,
+  id_usuario INT,
+  id_produto INT,
+  data_avaliacao DATE,
+  nota INT CHECK (nota >= 1 AND nota <= 5),
+  comentario TEXT,
+  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario),
+  FOREIGN KEY (id_produto) REFERENCES tbProdutos(id_produto)
+);
+
 
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar.s@estudante.ifmt.edu.br', 'Tech Lead'),
