@@ -1,0 +1,114 @@
+//1. Escolher um Backend (Servidor)
+
+//Você vai precisar de um servidor que gerencie as requisições, como Node.js com Express, que pode atuar como intermediário entre o JavaScript do frontend e o banco de dados.
+//2. Escolher um Banco de Dados
+
+//Você pode escolher um banco de dados relacional (como MySQL ou PostgreSQL) ou não relacional (como MongoDB). Vamos usar o exemplo do MongoDB, pois ele é muito usado em conjunto com Node.js.
+//3. Instalar e Configurar o Backend (Node.js + Express)
+
+//Você precisa configurar o Node.js no seu projeto para criar um servidor e lidar com as requisições de comentários.
+//Passos:
+
+//Instalar o Node.js e o Express: No diretório do seu projeto, rode os seguintes comandos para inicializar o projeto e instalar o Express e o MongoDB:
+/*
+  bash
+
+  npm init -y
+  npm install express mongoose body-parser
+*/
+
+/* -- Java Script
+
+Configurar o Servidor Express: Crie um arquivo server.js para configurar o servidor:
+
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+// Configurar o body parser para lidar com JSON
+app.use(bodyParser.json());
+
+// Conectar ao banco de dados MongoDB (certifique-se de ter o MongoDB rodando)
+mongoose.connect('mongodb://localhost:27017/comentarios', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("Conectado ao MongoDB"))
+.catch(err => console.log(err));
+
+// Criar o modelo de Comentário
+const Comentario = mongoose.model('Comentario', new mongoose.Schema({
+  texto: String,
+  autor: String,
+  data: { type: Date, default: Date.now }
+}));
+
+// Rota para salvar o comentário
+app.post('/comentarios', (req, res) => {
+  const novoComentario = new Comentario({
+    texto: req.body.texto,
+    autor: req.body.autor
+  });
+
+  novoComentario.save()
+    .then(comentario => res.status(200).json(comentario))
+    .catch(err => res.status(500).json({ message: 'Erro ao salvar comentário', error: err }));
+});
+
+// Iniciar o servidor
+const PORT = 3000;
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));*/
+
+//4. Frontend - JavaScript para Enviar os Comentários
+
+//Agora, no frontend, você pode ter um formulário onde o usuário insere o comentário, e quando ele envia, o JavaScript irá fazer uma requisição POST para o servidor, que por sua vez salvará o comentário no banco de dados.
+//Exemplo de HTML e JavaScript:
+
+/*
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentários</title>
+    <script>
+        // Função para enviar o comentário para o servidor
+        function enviarComentario() {
+            const texto = document.getElementById('comentario').value;
+            const autor = document.getElementById('autor').value;
+
+            fetch('http://localhost:3000/comentarios', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ texto: texto, autor: autor })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Comentário enviado com sucesso!");
+                console.log(data);
+                // Aqui você pode atualizar a interface com o novo comentário, se desejar
+            })
+            .catch(error => {
+                console.error('Erro ao enviar comentário:', error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Deixe seu Comentário</h1>
+
+    <input type="text" id="autor" placeholder="Seu nome" /><br />
+    <textarea id="comentario" placeholder="Digite seu comentário"></textarea><br />
+    <button onclick="enviarComentario()">Enviar Comentário</button>
+</body>
+</html>
+*/
+
+//5. Executar o Backend
+
+//    Execute o servidor Node.js com o comando:
+//    bash
+//    node server.js
