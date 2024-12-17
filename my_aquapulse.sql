@@ -272,6 +272,7 @@ VALUES   (1, '2024-01-10', 'Concluído', 599.99),
          (33, '2025-01-25', 'Pendente', 749.99),  
          (34, '2025-02-02', 'Concluído', 599.99),  
          (35, '2025-02-10', 'Cancelado', 649.99),  
+         (35, '2024-12-16' , 'Em andamento', 159.99),
          (36, '2025-02-20', 'Concluído', 699.99),  
          (37, '2025-03-01', 'Pendente', 799.99),  
          (38, '2025-03-10', 'Concluído', 749.99),  
@@ -402,28 +403,34 @@ VALUES  (1, '2023-10-01', 139.80, 'Cartão de Crédito', 'Aprovado'),
         (2, '2023-10-02', 199.90, 'Boleto', 'Aprovado'),
         (3, '2023-10-03', 49.90, 'Cartão de Débito', 'Cancelado');
 
+-- Seleciona algumas informações dos administradores
 SELECT nome_adm, sobrenome_adm, cargo_adm 
 FROM tbAdministradores;
 
+-- Seleciona os usuarios que moram em São Paulo
 SELECT nome_usuario AS "Clientes de São Paulo"
 FROM tbUsuarios
 WHERE estado_usuario = 'São Paulo';
 
+-- Seleciona tudo sobre a tabela e pedido e tabela usuario quando o email = 'andre.silva@email.com'
 SELECT * 
 FROM tbPedidos, tbUsuarios
 WHERE email_usuario = 'andre.silva@email.com' AND
 tbUsuarios.id_usuario = tbPedidos.id_usuario;
 
+-- Seleciona o id do pedido, o nome do usuario e o totaldo preço, de todos os pedidos com status pendente
 SELECT id_pedido, nome_usuario, total_pedido
 FROM tbPedidos
 INNER JOIN tbUsuarios ON tbUsuarios.id_usuario = tbPedidos.id_usuario
 WHERE tbPedidos.status_pedido = 'Pendente';
 
+-- Seleciona o nome do usuario, a quantidade de pedidos e o total gasto
 SELECT u.nome_usuario, COUNT(p.id_pedido) AS total_pedidos, SUM(p.total_pedido) AS total_gasto
 FROM tbUsuarios u
 INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
 GROUP BY u.id_usuario;
 
+-- Seleciona o usuario com o maior número de pedidos
 SELECT nome_usuario, COUNT(id_pedido) AS Total_Pedidos
 FROM tbUsuarios u
 INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
@@ -431,19 +438,23 @@ GROUP BY u.id_usuario
 ORDER BY Total_Pedidos
 LIMIT 1;
 
+-- Seleciona todos os pedidos que forma cancelados
 SELECT nome_usuario, p.id_pedido, p.data_pedido
 FROM tbUsuarios u
 INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
 WHERE p.status_pedido = 'cancelado';
 
+-- Seleciona o usuarios e os seus pedidos
 SELECT nome_usuario, p.id_pedido, p.status_pedido
 FROM tbUsuarios u
 INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario;
 
+-- selecioan todos os administradores com cargo de freelancer
 SELECT nome_adm
 FROM tbAdministradores
 WHERE cargo_adm = 'freelancer';
 
+-- seleciona todos os usuarios que tiveram o pedido Concluido
 SELECT nome_usuario
 FROM tbUsuarios, tbPedidos
 WHERE status_pedido = 'Concluído' AND
