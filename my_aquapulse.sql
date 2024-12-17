@@ -100,7 +100,7 @@ INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar.s@estudante.ifmt.edu.br', 'Tech Lead'),
          ('Iago', 'Bortoluzzi', 'iagogabriel9710@gmail.com', 'chefe'),
          ('Pedro', 'Alves', 'pedro@gmail.com', 'estagiario'),
-         ('Iago', 'Paiva', 'iago2@gmail.com', 'estagiario'),
+         ('Iago', 'Paiva', 'iagofouletto@gmail.com', 'estagiario'),
          ('Amir', 'Tamlieh', 'amir.t@estudante.ifmt.edu.br', 'freelancer'),
          ('Leonardo', 'Leite', 'leornardo@email.com', 'freelancer');
 
@@ -415,13 +415,13 @@ WHERE email_usuario = 'andre.silva@email.com' AND
 tbUsuarios.id_usuario = tbPedidos.id_usuario;
 
 SELECT id_pedido, nome_usuario, total_pedido
-FROM tbPedidos, tbUsuarios
-WHERE status_pedido = 'Pendente' AND 
-tbUsuarios.id_usuario = tbPedidos.id_usuario;
+FROM tbPedidos
+INNER JOIN tbUsuarios ON tbUsuarios.id_usuario = tbPedidos.id_usuario
+WHERE tbPedidos.status_pedido = 'Pendente';
 
 SELECT u.nome_usuario, COUNT(p.id_pedido) AS total_pedidos, SUM(p.total_pedido) AS total_gasto
 FROM tbUsuarios u
-LEFT JOIN tbPedidos p ON u.id_usuario = p.id_usuario
+INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
 GROUP BY u.id_usuario;
 
 SELECT nome_usuario, COUNT(id_pedido) AS Total_Pedidos
@@ -438,4 +438,6 @@ WHERE p.status_pedido = 'cancelado';
 
 SELECT nome_usuario, p.id_pedido, p.status_pedido
 FROM tbUsuarios u
-LEFT JOIN tbPedidos p ON u.id_usuario = p.id_usuario;
+INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario;
+
+
