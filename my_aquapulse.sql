@@ -440,4 +440,11 @@ SELECT nome_usuario, p.id_pedido, p.status_pedido
 FROM tbUsuarios u
 INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario;
 
+SELECT nome_adm
+FROM tbAdministradores
+WHERE cargo_adm = 'freelancer';
 
+SELECT nome_usuario
+FROM tbUsuarios, tbPedidos
+WHERE status_pedido = 'Concluído' AND
+tbUsuarios.id_usuario = tbPedidos.id_usuario;
