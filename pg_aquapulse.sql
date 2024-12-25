@@ -56,53 +56,6 @@ CREATE TABLE tbMensagensSuporte (
   FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
 );
 
--- REVISAR
-
-CREATE TABLE tbProdutos (
-  id_produto SERIAL PRIMARY KEY,
-  nome_produto VARCHAR(100),
-  descricao_produto TEXT,
-  preco_produto DECIMAL,
-  estoque_produto INT
-);
-
-CREATE TABLE tbEnderecos (
-  id_endereco SERIAL PRIMARY KEY,
-  id_usuario INT,
-  endereco VARCHAR(255),
-  cidade VARCHAR(100),
-  estado VARCHAR(100),
-  cep VARCHAR(10),
-  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
-);
-
-CREATE TABLE tbPagamentos (
-  id_pagamento SERIAL PRIMARY KEY,
-  id_pedido INT,
-  data_pagamento DATE,
-  valor_pagamento DECIMAL,
-  metodo_pagamento VARCHAR(50),
-  status_pagamento VARCHAR(50),
-  FOREIGN KEY (id_pedido) REFERENCES tbPedidos(id_pedido)
-);
-
-CREATE TABLE tbCategorias (
-  id_categoria SERIAL PRIMARY KEY,
-  nome_categoria VARCHAR(100),
-  descricao_categoria TEXT
-);
-
-CREATE TABLE tbAvaliacoes (
-  id_avaliacao SERIAL PRIMARY KEY,
-  id_usuario INT,
-  id_produto INT,
-  data_avaliacao DATE,
-  nota INT CHECK (nota >= 1 AND nota <= 5),
-  comentario TEXT,
-  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario),
-  FOREIGN KEY (id_produto) REFERENCES tbProdutos(id_produto)
-);
-
 
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
   VALUES ('Osmar', 'Araujo', 'osmar.s@estudante.ifmt.edu.br', 'Tech Lead'),
@@ -375,37 +328,3 @@ VALUES   (1, '2024-01-10', 'Concluído', 599.99),
          (128, '2024-12-17', 'Concluído', 280.00),
          (129, '2024-12-18', 'Em andamento', 250.60),
          (130, '2024-12-19', 'Cancelado', 170.30);
-
-INSERT INTO tbComentarios (id_usuario, data_comentario, conteudo_comentario)
-VALUES  (1, '2024-12-10', 'Produto excelente, ajudou muito na irrigação automática.'),
-        (2, '2024-12-11', 'A entrega foi rápida, recomendo o sistema AquaPulse.'),
-        (3, '2024-12-12', 'Tive um problema com a configuração inicial, mas o suporte foi muito atencioso.'),
-        (4, '2024-12-13', 'Preço justo pela qualidade do produto.'),
-        (5, '2024-12-14', 'Estou satisfeito com o desempenho do sistema, muito eficiente!');
-
-INSERT INTO tbMensagensSuporte (id_usuario, data_mensagem, conteudo_mensagem)
-VALUES  (1, '2024-12-01', 'Como configurar o sistema para irrigar em horários diferentes?'),
-        (2, '2024-12-02', 'O produto chegou com uma peça faltando, como proceder?'),
-        (3, '2024-12-03', 'Posso usar o sistema em uma plantação maior que 2 hectares?'),
-        (4, '2024-12-05', 'Quais são as condições para a garantia do produto?'),
-        (5, '2024-12-07', 'O suporte técnico pode ajudar na instalação inicial?');
-       
-INSERT INTO tbProdutos (nome_produto, descricao_produto, preco_produto, estoque_produto) 
-VALUES  ('Sensor de Umidade', 'Sensor para medir a umidade do solo, ideal para irrigação automática.', 49.90, 200),
-        ('Válvula Solenoide', 'Válvula para controle do fluxo de água em sistemas de irrigação.', 89.90, 150),
-        ('Controlador Arduino', 'Placa Arduino para automação de sistemas de irrigação.', 199.90, 100);
-       
-INSERT INTO tbCategorias (nome_categoria, descricao_categoria) 
-VALUES  ('Sensores', 'Dispositivos para monitoramento de condições do solo.'),
-        ('Válvulas', 'Equipamentos para controle do fluxo de água.'),
-        ('Controladores', 'Placas e dispositivos para automação.');
-       
-INSERT INTO tbEnderecos (id_usuario, endereco, cidade, estado, cep) 
-VALUES  (1, 'Rua A, 123', 'São Paulo', 'SP', '01000-000'),
-        (2, 'Avenida B, 456', 'Rio de Janeiro', 'RJ', '20000-000'),
-        (3, 'Praça C, 789', 'Belo Horizonte', 'MG', '30000-000');
-
-INSERT INTO tbPagamentos (id_pedido, data_pagamento, valor_pagamento, metodo_pagamento, status_pagamento) 
-VALUES  (1, '2023-10-01', 139.80, 'Cartão de Crédito', 'Aprovado'),
-        (2, '2023-10-02', 199.90, 'Boleto', 'Aprovado'),
-        (3, '2023-10-03', 49.90, 'Cartão de Débito', 'Cancelado');
