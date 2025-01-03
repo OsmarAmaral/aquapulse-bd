@@ -1,13 +1,5 @@
 -- AquaPulse - Sistema de irrigação automática
 
--- AVISO !!! todos os usuarios são ficticios !!!
-
--- Banco de dados do SITE !!! 
-
--- Vendemos um unico tipo de produto 
-
--- MySQL
-
 CREATE TABLE tbAdministradores (
   id_adm INT AUTO_INCREMENT PRIMARY KEY,
   nome_adm VARCHAR(100),
@@ -57,43 +49,6 @@ CREATE TABLE tbProdutos (
   descricao_produto TEXT,
   preco_produto DECIMAL(10, 2),
   estoque_produto INT
-);
-
-CREATE TABLE tbEnderecos (
-  id_endereco INT AUTO_INCREMENT PRIMARY KEY,
-  id_usuario INT,
-  endereco VARCHAR(255),
-  cidade VARCHAR(100),
-  estado VARCHAR(100),
-  cep VARCHAR(10),
-  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario)
-);
-
-CREATE TABLE tbPagamentos (
-  id_pagamento INT AUTO_INCREMENT PRIMARY KEY,
-  id_pedido INT,
-  data_pagamento DATE,
-  valor_pagamento DECIMAL(10, 2),
-  metodo_pagamento VARCHAR(50),
-  status_pagamento VARCHAR(50),
-  FOREIGN KEY (id_pedido) REFERENCES tbPedidos(id_pedido)
-);
-
-CREATE TABLE tbCategorias (
-  id_categoria INT AUTO_INCREMENT PRIMARY KEY,
-  nome_categoria VARCHAR(100),
-  descricao_categoria TEXT
-);
-
-CREATE TABLE tbAvaliacoes (
-  id_avaliacao INT AUTO_INCREMENT PRIMARY KEY,
-  id_usuario INT,
-  id_produto INT,
-  data_avaliacao DATE,
-  nota INT CHECK (nota >= 1 AND nota <= 5),
-  comentario TEXT,
-  FOREIGN KEY (id_usuario) REFERENCES tbUsuarios(id_usuario),
-  FOREIGN KEY (id_produto) REFERENCES tbProdutos(id_produto)
 );
 
 INSERT INTO tbAdministradores (nome_adm, sobrenome_adm, email_adm, cargo_adm)
@@ -387,75 +342,4 @@ INSERT INTO tbProdutos (nome_produto, descricao_produto, preco_produto, estoque_
 VALUES  ('Sensor de Umidade', 'Sensor para medir a umidade do solo, ideal para irrigação automática.', 49.90, 200),
         ('Válvula Solenoide', 'Válvula para controle do fluxo de água em sistemas de irrigação.', 89.90, 150),
         ('Controlador Arduino', 'Placa Arduino para automação de sistemas de irrigação.', 199.90, 100);
-       
-INSERT INTO tbCategorias (nome_categoria, descricao_categoria) 
-VALUES  ('Sensores', 'Dispositivos para monitoramento de condições do solo.'),
-        ('Válvulas', 'Equipamentos para controle do fluxo de água.'),
-        ('Controladores', 'Placas e dispositivos para automação.');
-       
-INSERT INTO tbEnderecos (id_usuario, endereco, cidade, estado, cep) 
-VALUES  (1, 'Rua A, 123', 'São Paulo', 'SP', '01000-000'),
-        (2, 'Avenida B, 456', 'Rio de Janeiro', 'RJ', '20000-000'),
-        (3, 'Praça C, 789', 'Belo Horizonte', 'MG', '30000-000');
-
-INSERT INTO tbPagamentos (id_pedido, data_pagamento, valor_pagamento, metodo_pagamento, status_pagamento) 
-VALUES  (1, '2023-10-01', 139.80, 'Cartão de Crédito', 'Aprovado'),
-        (2, '2023-10-02', 199.90, 'Boleto', 'Aprovado'),
-        (3, '2023-10-03', 49.90, 'Cartão de Débito', 'Cancelado');
-
--- Seleciona algumas informações dos administradores
-SELECT nome_adm, sobrenome_adm, cargo_adm 
-FROM tbAdministradores;
-
--- Seleciona os usuarios que moram em São Paulo
-SELECT nome_usuario AS "Clientes de São Paulo"
-FROM tbUsuarios
-WHERE estado_usuario = 'São Paulo';
-
--- Seleciona tudo sobre a tabela e pedido e tabela usuario quando o email = 'andre.silva@email.com'
-SELECT * 
-FROM tbPedidos, tbUsuarios
-WHERE email_usuario = 'andre.silva@email.com' AND
-tbUsuarios.id_usuario = tbPedidos.id_usuario;
-
--- Seleciona o id do pedido, o nome do usuario e o totaldo preço, de todos os pedidos com status pendente
-SELECT id_pedido, nome_usuario, total_pedido
-FROM tbPedidos
-INNER JOIN tbUsuarios ON tbUsuarios.id_usuario = tbPedidos.id_usuario
-WHERE tbPedidos.status_pedido = 'Pendente';
-
--- Seleciona o nome do usuario, a quantidade de pedidos e o total gasto
-SELECT u.nome_usuario, COUNT(p.id_pedido) AS total_pedidos, SUM(p.total_pedido) AS total_gasto
-FROM tbUsuarios u
-INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
-GROUP BY u.id_usuario;
-
--- Seleciona o usuario com o maior número de pedidos
-SELECT nome_usuario, COUNT(id_pedido) AS Total_Pedidos
-FROM tbUsuarios u
-INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
-GROUP BY u.id_usuario
-ORDER BY Total_Pedidos
-LIMIT 1;
-
--- Seleciona todos os pedidos que forma cancelados
-SELECT nome_usuario, p.id_pedido, p.data_pedido
-FROM tbUsuarios u
-INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario
-WHERE p.status_pedido = 'cancelado';
-
--- Seleciona o usuarios e os seus pedidos
-SELECT nome_usuario, p.id_pedido, p.status_pedido
-FROM tbUsuarios u
-INNER JOIN tbPedidos p ON u.id_usuario = p.id_usuario;
-
--- selecioan todos os administradores com cargo de freelancer
-SELECT nome_adm
-FROM tbAdministradores
-WHERE cargo_adm = 'freelancer';
-
--- seleciona todos os usuarios que tiveram o pedido Concluido
-SELECT nome_usuario
-FROM tbUsuarios, tbPedidos
-WHERE status_pedido = 'Concluído' AND
-tbUsuarios.id_usuario = tbPedidos.id_usuario;
+   
