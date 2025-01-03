@@ -1,18 +1,5 @@
 -- AquaPulse - Sistema de irrigação automática
 
--- AVISO !!! todos os usuarios são ficticios !!!
-
--- Banco de dados do SITE !!! 
-
--- Vendemos um unico tipo de produto 
-
--- postgreSQL 
-
--- adic valores tbComentarios,
--- adic valores tbMensagensSuporte,
--- adic valores tbPagamentos,
--- adic valores tbEnderecos,
-
 CREATE TABLE tbAdministradores (
   id_adm SERIAL PRIMARY KEY,
   nome_adm VARCHAR(100),
@@ -328,3 +315,7 @@ VALUES   (1, '2024-01-10', 'Concluído', 599.99),
          (128, '2024-12-17', 'Concluído', 280.00),
          (129, '2024-12-18', 'Em andamento', 250.60),
          (130, '2024-12-19', 'Cancelado', 170.30);
+
+SELECT nome_usuario
+FROM tbUsuarios
+WHERE estado_usuario = 'Mato Grosso';
