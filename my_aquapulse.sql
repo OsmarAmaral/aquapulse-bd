@@ -100,7 +100,7 @@ INSERT INTO tbUsuarios (nome_usuario, sobrenome_usuario, email_usuario, senha_us
          ('Hugo', 'Oliveira', 'hugo.oliveira@email.com', 'senhaForte@201', 'Humaitá', 'Amazonas'),
          ('Helen', 'Costa', 'helen.costa@email.com', 'superSenha!321', 'Holambra', 'São Paulo'),
          ('Heitor', 'Pereira', 'heitor.pereira@email.com', 'senhaLegal@2025', 'Hermenópolis', 'Minas Gerais'),
-         ('Isabela', 'Silva', 'isabela.silva@email.com', 'novaSenha@321', 'Ipatinga', 'Minas Gerais');
+         ('Isabela', 'Silva', 'isabela.silva@email.com', 'novaSenha@321', 'Ipatinga', 'Minas Gerais'),
          ('Igor', 'Rocha', 'igor.rocha@email.com', 'senhaSegura123!', 'Ipojuca', 'Pernambuco'),
          ('Ícaro', 'Costa', 'icaro.costa@email.com', 'novaSenha456$', 'Ilhéus', 'Bahia'),
          ('Isadora', 'Pereira', 'isadora.pereira@email.com', 'senhaForte789@', 'Indaiatuba', 'São Paulo'),
@@ -139,7 +139,7 @@ INSERT INTO tbUsuarios (nome_usuario, sobrenome_usuario, email_usuario, senha_us
          ('Pedro', 'Lima', 'pedro.lima@email.com', 'senha123@789', 'Paulista', 'Pernambuco'),
          ('Priscila', 'Costa', 'priscila.costa@email.com', 'novaSenha!654$', 'Poços de Caldas', 'Minas Gerais'),
          ('Paulo', 'Silva', 'paulo.silva@email.com', 'forteSenha@789', 'Ponta Grossa', 'Paraná'),
-         ('Patrícia', 'Rocha', 'patricia.rocha@email.com', 'minhaSenha456$', 'Piracicaba', 'São Paulo');
+         ('Patrícia', 'Rocha', 'patricia.rocha@email.com', 'minhaSenha456$', 'Piracicaba', 'São Paulo'),
          ('Quésia', 'Almeida', 'quesia.almeida@email.com', 'senhaExtra#123', 'Quixeramobim', 'Ceará'),
          ('Quirino', 'Costa', 'quirino.costa@email.com', 'novaSenha456$', 'Quixadá', 'Ceará'),
          ('Quezia', 'Pereira', 'quezia.pereira@email.com', 'superSenha@789', 'Quilombo', 'Santa Catarina'),
